@@ -17,7 +17,7 @@
 							<p>产地:<span></span></p>
 							<p>
 								<i>￥</i>
-								<i>232.0</i>
+								<i>100.0</i>
 							</p>
 						</div>
 						<div id="wkf_add"> 
@@ -44,16 +44,16 @@
 				<p>
 					<i>总额:</i>
 					<b>￥</b>
-					<strong id="zj">232.0</strong>
+					<strong id="zj">100.0</strong>
 					<span id="yf" >(还差￥<em id="cj">240</em>元包邮哦)</span>
 					<span id="myf" hidden="hidden">已经为您免邮费了哦</span>
 				</p>
 				<p>
 					<i>运费:￥</i>
-					<em>10.0</em>
+					<em id="myfl">10.0</em>
 					<i>合计:</i>
 					<b>￥</b>
-					<strong id="zj2">232.0</strong>
+					<strong id="zj2">100.0</strong>
 				</p>
 			</li>
 			<li><span>去结算</span></li>
