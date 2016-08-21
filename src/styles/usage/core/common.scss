@@ -1,0 +1,44 @@
+$base-color: #04A247;
+
+@font-face {
+    font-family: yofont;
+    src: url("/zyt/fonts/iconfont-index.woff") format("woff"), 
+        url("/zyt/fonts/iconfont-index.ttf") format("truetype");
+}
+@font-face {
+    font-family: yofont;
+    src: url("/zyt/fonts/iconfont-home.woff") format("woff"), 
+        url("/zyt/fonts/iconfont-home.ttf") format("truetype");
+}
+@font-face {
+    font-family: yofont;
+    src: url("/zyt/fonts/iconfont-mine.woff") format("woff"), 
+        url("/zyt/fonts/iconfont-mine.ttf") format("truetype");
+}
+@font-face {
+    font-family: yofont;
+    src: url("/zyt/fonts/iconfont-cart.woff") format("woff"), 
+        url("/zyt/fonts/iconfont-cart.ttf") format("truetype");
+}
+
+.icon-shoplight:before { content: "\e7b8"; }
+.icon-sortlight:before { content: "\e7ad"; }
+.icon-cart:before { content: "\e6af"; }
+.icon-people:before { content: "\e736"; }
+
+.icon-top:before { content: "\e69e"; }
+.icon-appreciate:before { content: "\e644"; }
+.icon-hot:before { content: "\e758"; }
+.icon-cart:before { content: "\e6af"; }
+.icon-search:before { content: "\e65c"; }
+
+.icon-shezhi:before { content: "\e615"; }
+.icon-lingdang:before { content: "\e602"; }
+.icon-daifukuan:before { content: "\e614"; }
+.icon-untitled3:before { content: "\e663"; }
+.icon-yiwancheng:before { content: "\e626"; }
+.icon-gerenxinxi-copy:before { content: "\e600"; }
+.icon-shouhuoxinxi:before { content: "\e646"; }
+.icon-xiugaimima:before { content: "\e6a9"; }
+
+.icon-rmb:before { content: "\e656"; }

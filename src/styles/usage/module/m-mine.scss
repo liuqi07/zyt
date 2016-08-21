@@ -1,0 +1,139 @@
+.f-container{
+  font-family: "微软雅黑";
+  @include flexbox();
+  @include flex-direction(column);
+  height:100%;width:100%;
+
+    header{
+      background: #ffffff;
+      width:100%;
+      height:.44rem;
+      background-color:$base-color;
+      @include flexbox();
+      i{
+        width: .44rem;
+        text-align: center;
+        line-height: .44rem;
+        font-size: .3rem;
+      }
+      b{
+        font-weight: normal;
+        @include flex();
+        text-align: center;
+        line-height: .44rem;
+        color:#ffffff;
+        font-size: .14rem;
+      }
+    }
+    .f-section{
+      background: #ffffff;
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      height: 1rem;
+      width: 100%;
+      background-color: $base-color;
+      .f-sec-div{
+        height: .68rem;
+        width: .68rem;
+        border-radius: 50%;
+        background: #ffffff;
+        text-align: center;
+        line-height: .68rem;
+        font-size: .14rem;
+      }
+    }
+    .f-section-t{
+      background: #ffffff;
+      height: 1.05rem;
+      width:100%;
+      .f-s-t{
+        height: .36rem;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        padding:0 .12rem;
+        i{
+          padding-left:.12rem;
+        }
+      }
+      .f-s-f{
+        height: .69rem;
+        width:100%;
+        @include flexbox();
+        @include border(1px 0 1px 0,#dedede);
+        div{
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content(center);
+          @include align-items(center);
+          width: 33.3%;
+          height:100%;
+        }
+        .f-s-l{
+          i{color: #ffc132;}
+        }
+        .f-s-c{
+          @include border(0 1px 0 1px,#dedede);
+          i{color: #f62954;}
+        }
+        .f-s-r{
+          i{color:#8b00d3;}
+        }
+      }
+
+    }
+    .f-section-h{
+
+      height: 1.24rem;
+
+      .f-h-t{
+        @include border(1px 0 1px 0,#dedede);
+        background: #ffffff;
+        margin-top:.1rem;
+        padding-left:.12rem;
+        line-height:.35rem;
+        height:.35rem;
+      }
+      .f-h-b{
+        background: #ffffff;
+        @include flexbox();
+        height:.69rem;
+        div{
+          @include flexbox();
+          @include justify-content(center);
+          @include flex-direction(column);
+          @include align-items(center);
+          @include border(1px,#dedede);
+          height: 100%;
+          width: 33.3%;
+        }
+        .f-h-l i{
+          color:#2ebffa
+        }
+        .f-h-c i{
+          color: #1ece43;
+        }
+        .f-h-r i{
+          color: #1448f1;
+        }
+      }
+    }
+    .f-section-f{
+      .f-fen{
+
+      }
+      background: #ffffff;
+      height: 1.4rem;
+      div{
+        height: .35rem;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+        @include border(1px,#dedede);
+        padding-left:.12rem;
+        padding-right:.12rem;
+      }
+    }
+
+}

@@ -1,0 +1,49 @@
+<div class="regbox">
+      <header class="reg_h">
+          <i class="yo-ico">ff</i>
+          <span>注册</span>
+      </header>
+
+      <section class="reg_s">
+          <div class="reg_s1">
+              <i class="yo-ico">ss</i>
+              <input type="text" placeholder="请输入手机号"></input>
+          </div>
+
+          <div class="">
+              <i class="">aa</i>
+              <span>请输入验证码</span>
+              <span>获取验证码</span>
+          </div>
+          <div class="">
+              <i class="">xx</i>
+              <span>请输入密码</span>
+          </div>
+          <div class="">
+              <i class="">cc</i>
+              <span>请重新输入密码</span>
+          </div>
+
+          <div class="reg_s1">
+              <i class="yo-ico">ss</i>
+              <input type="text" placeholder="请输入验证码"></input>
+              <span class="reg_yan">获取验证码</span>
+          </div>
+          <div class="reg_s1">
+              <i class="yo-ico">ss</i>
+              <input type="text" placeholder="请输入密码"></input>
+          </div>
+          <div class="reg_s1">
+              <i class="yo-ico">ss</i>
+              <input type="text" placeholder="请重新输入密码"></input>
+          </div>
+
+      </section>
+      <section>
+        <i class="yo-ico">vv</i>
+        我同意<span>正源通用户注册协议</span>
+      </section>
+      <section>
+        <button type="button" name="button">提交</button>
+      </section>
+</div>

@@ -1,0 +1,17 @@
+<div class="m-index">
+	<div id="index-container"></div>
+	<footer class="index-footer">
+		<p action-type='switch' data-name='home' class="active">
+			<i class="yo-ico icon-shoplight"></i><span>首页</span>
+		</p>
+		<p action-type='switch' data-name='list'>
+			<i class="yo-ico icon-sortlight"></i><span>分类</span>
+		</p>
+		<p action-type='switch' data-name='cart'>
+			<i class="yo-ico icon-cart"></i><span>购物车</span>
+		</p>
+		<p action-type='switch' data-name='mine'>
+			<i class="yo-ico icon-people"></i><span>我的</span>
+		</p>
+	</footer>
+</div>

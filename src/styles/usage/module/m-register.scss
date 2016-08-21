@@ -1,0 +1,32 @@
+.regbox{
+    height: 100%;
+    width: 100%;
+    font-family:"微软雅黑";
+    @include flexbox();
+    @include flex-direction(column);
+
+    .reg_h{
+        padding-left:.12rem;
+        height:.44rem;
+        width :100%;
+        background:$base-color;
+        @include flexbox();
+        line-height: .44rem;
+        color: #ffffff;
+        span{
+          margin-left:50%;
+        }
+    }
+    .reg_s{
+      padding:0 .12rem;
+      @include justify-content(center);
+      div{
+        background:#ffffff;
+        padding-left:.12rem;
+        height: .34rem;
+        line-height: .34rem;
+      }
+    }
+
+
+}

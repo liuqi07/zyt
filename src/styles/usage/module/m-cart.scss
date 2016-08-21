@@ -1,0 +1,170 @@
+    #cart-container{
+//     =============================== header===================================
+        @include flexbox();
+        @include flex();
+        @include flex-direction(column);
+        width: 100%;
+        font-family: "微软雅黑";
+        header{
+            @include flexbox();
+            height: .44rem;
+            background: $base-color;
+            color: #fff;
+            padding-left: .54rem;
+            i{
+                width: .54rem;
+                text-align: center;
+                line-height: .44rem;
+                font-size: .12rem;
+            }
+            span{
+                @include flex();
+                text-align: center;
+                line-height: .44rem;
+                font-size: .15rem;
+            }
+        }
+         //============================= == section===================================
+        section{
+            @include flex();
+            @include flex-direction(column);
+            width: 100%;
+            background: #f4f8f9;
+            ul{
+                height: 100%;
+                width: 100%!important;
+                @include flexbox();
+                height: .97rem;
+                background: #fff;
+                position: relative;
+                border-bottom: .1rem solid #f0f0f0;
+                li:first-child{
+//                  @include align-items(center);
+//                  @include flexbox();
+                    width: 100%;
+                    float: left;
+                    #wkf_swp_left{
+                        position: relative;
+                        @include align-items(center);
+                        @include flexbox();
+                        width: 100%;
+                        #wkf_left{
+                            text-align: center;
+                            width: .36rem;
+                            i{
+                                width: .21rem;
+                                height: .21rem;
+                                display: inline-block;
+                                @include border(2px,#d6d6d6,solid,50%);
+                            }
+                        }
+                        #wkf_center{
+                            height: .79rem;
+                             width: .79rem;
+                             @include border(1px,#ccc,solid,.1rem);
+                             overflow: hidden;
+                             img{
+                                 height: .79rem;
+                                 width: .79rem;
+                             
+                            }
+                        }
+                       
+                        #wkf_right{
+                            @include flex();
+                            padding-left: .1rem;
+                            padding-right: .1rem;
+                            p{
+                                color: #666;
+                                  @include ellipsis(100%,1);
+                                &:last-child{
+                                    color: $base-color;
+                                }
+                               
+                              
+                            }
+                        }
+                     #wkf_add{
+                         @include flexbox();
+                         position: absolute;
+                         right: .05rem;
+                         bottom: .03rem;
+                         text-align: center;
+                         span{
+                             display: block;
+                             width: .25rem;
+                             height: .2rem;
+                             @include border(1px,#d6d6d6,solid);
+                         }
+                     } 
+                     
+                    }
+          
+                       
+                }
+                li:last-child{
+                    
+                    float: left;
+                         position: absolute;
+                         right: -1.1rem;
+                         width: 1.100rem!important;
+                         height: 100%;
+                         background: red;
+                     
+                }
+            }
+            
+        }
+    }
+        //     =============================== buy===================================
+        .buy{
+            background:rgba(125,125,125,0.5) ;
+            height: .44rem;
+            font-size: .1rem;
+            ul{
+                color: #fff;
+                @include flexbox();
+                font-size: .12rem;
+                width: 100%;
+                height: 100%;
+                li:first-child{
+                    width: .56rem;
+                    height: .44rem;
+                    padding-top: .14rem;
+                    font-size: .14rem;
+                    @include flexbox();
+                    @include justify-content(center);
+                       span{
+                           display:block;
+                          line-height: 15px;
+                          padding-left: .03rem;
+                       }
+                        
+                }
+                li:last-child{
+                    text-align: center;
+                    line-height: .44rem;
+                    width: .6rem;
+                    background: $base-color;
+                    font-size: .15rem;
+                }
+                li:nth-child(2){
+                    @include flex();
+                    @include flexbox;
+                    @include flex-direction(column);
+                    @include justify-content(space-around);
+//                  padding-left: .03rem;
+                    b,strong{
+                        font-size: .135rem;
+                    }
+                }
+            }
+        }
+       
+ .wkfi{
+        display: inline-block;
+         width: .15rem;
+         height: .15rem;
+         @include border(2px,#fff,solid,50%);
+    }
+  

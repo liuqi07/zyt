@@ -1,0 +1,72 @@
+<div class="f-container">
+    <header>
+      <i class="yo-ico icon-shezhi"></i>
+      <b>我的</b>
+      <i class="yo-ico icon-lingdang"></i>
+    </header>
+    <section class="f-section">
+      <div class="f-sec-div">
+        <i class="yo-ico icon-gerenxinxi-copy"></i>
+      </div>
+    </section>
+    <section class="f-section-t">
+      <div class="f-s-t">
+        <strong>我的订单</strong>
+        <span>查看全部订单<i>></i></span>
+
+      </div>
+      <div class="f-s-f">
+        <div class="f-s-l">
+          <i class="yo-ico icon-daifukuan"></i>
+          <span>待付款</span>
+        </div>
+        <div class="f-s-c">
+            <i class="yo-ico icon-untitled3"></i>
+          <span>待收货</span>
+        </div>
+        <div class="f-s-r">
+          <i class="yo-ico icon-yiwancheng"></i>
+          <span>已完成</span>
+        </div>
+      </div>
+    </section>
+    <section class="f-section-h">
+      <div class="f-h-t">
+        <strong>我的信息</strong>
+      </div>
+      <div class="f-h-b">
+        <div class="f-h-l">
+          <i class="yo-ico icon-gerenxinxi-copy"></i>
+          <span>个人信息</span>
+        </div>
+        <div class="f-h-c">
+            <i class="yo-ico icon-untitled3"></i>
+          <span>收货地址</span>
+        </div>
+        <div class="f-h-r">
+          <i class="yo-ico icon-xiugaimima"></i>
+          <span>修改密码</span>
+        </div>
+      </div>
+    </section>
+    <section class="f-section-f">
+      <div class="f-fen">
+        <span>分享APP</span>
+        <i>></i>
+      </div>
+      <div class="">
+        <span>客户电话</span>
+        <i>></i>
+      </div>
+      <div class="">
+        <span>帮助反馈</span>
+        <i>></i>
+      </div>
+      <div class="">
+        <span>我的信息</span>
+        <i>></i>
+      </div>
+    </section>
+    <footer> </footer>
+
+</div>
