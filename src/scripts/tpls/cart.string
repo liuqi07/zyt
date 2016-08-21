@@ -22,12 +22,10 @@
 						</div>
 						<div id="wkf_add"> 
 							<span>-</span>
-							<span>3</span>
+							<span>1</span>
 							<span>+</span>
 						</div>
 					</div>
-					
-					
 				</li>
 				<li>
 					<div id="wkf_swp_left"></div>
@@ -46,15 +44,16 @@
 				<p>
 					<i>总额:</i>
 					<b>￥</b>
-					<strong>193.6</strong>
-					<span>(还差￥<em>240</em>元包邮哦)</span>
+					<strong id="zj">232.0</strong>
+					<span id="yf" >(还差￥<em id="cj">240</em>元包邮哦)</span>
+					<span id="myf" hidden="hidden">已经为您免邮费了哦</span>
 				</p>
 				<p>
 					<i>运费:￥</i>
 					<em>10.0</em>
 					<i>合计:</i>
 					<b>￥</b>
-					<strong>193.6</strong>
+					<strong id="zj2">232.0</strong>
 				</p>
 			</li>
 			<li><span>去结算</span></li>
