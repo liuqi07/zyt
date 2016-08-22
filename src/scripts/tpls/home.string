@@ -16,10 +16,11 @@
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
-			<ul class="list1">
+			<ul class="list1" ms-repeat-el="livelist">
 				<li><img src="/zyt/img/home/home01.jpg" alt="" /><p>全部</p></li>
 				<li><img src="/zyt/img/home/home01.jpg" alt="" /><p>全部</p></li>
-				
+				<li><img src="/zyt/img/home/home01.jpg" alt="" /><p>全部</p></li>
+				<li><img src="/zyt/img/home/home01.jpg" alt="" /><p>全部</p></li>
 			</ul>
 			<div class="title1">
 				<div class="line"></div>
@@ -34,9 +35,30 @@
 					<span>¥<strong>159.0</strong>元</span>
 					<i class="yo-ico icon-cart"></i>
 				</li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>
+					<div><img src="/zyt/img/home/list2-01.jpg" alt="" /></div>
+					<h3>澳大利亚·Banana Boat</h3>
+					<p>澳大利亚进口Banana Boat Everyday 香蕉船 SPF50+清洁儿童牙膏</p>
+					<span>¥<strong class="price">129.0</strong>元</span>
+					<span>¥<strong>159.0</strong>元</span>
+					<i class="yo-ico icon-cart"></i>
+				</li>
+				<li>
+					<div><img src="/zyt/img/home/list2-01.jpg" alt="" /></div>
+					<h3>澳大利亚·Banana Boat</h3>
+					<p>澳大利亚进口Banana Boat Everyday 香蕉船 SPF50+清洁儿童牙膏</p>
+					<span>¥<strong class="price">129.0</strong>元</span>
+					<span>¥<strong>159.0</strong>元</span>
+					<i class="yo-ico icon-cart"></i>
+				</li>
+				<li>
+					<div><img src="/zyt/img/home/list2-01.jpg" alt="" /></div>
+					<h3>澳大利亚·Banana Boat</h3>
+					<p>澳大利亚进口Banana Boat Everyday 香蕉船 SPF50+清洁儿童牙膏</p>
+					<span>¥<strong class="price">129.0</strong>元</span>
+					<span>¥<strong>159.0</strong>元</span>
+					<i class="yo-ico icon-cart"></i>
+				</li>
 			</ul>
 		</div>
 	</section>
