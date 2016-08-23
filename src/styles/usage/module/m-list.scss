@@ -46,7 +46,8 @@
                 @include flex-flow(row wrap);
                 li{
                     @include border(1px solid #333);
-                    @include border-radius(.1rem);
+                    //@include border-radius(.1rem);
+                    /*border-radius:.1rem;*/
                     padding:.05rem .05rem;
                     margin:.1rem .1rem 0 0;
                 }

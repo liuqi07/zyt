@@ -9,7 +9,6 @@ SPA.defineView('list', {
 	    name: 'avalon',
 	    options: function (vm) {
 	    	vm.list = [];
-	    	vm.listCont = [];
 	    }
 	}],
   
@@ -27,8 +26,9 @@ SPA.defineView('list', {
 			  		type: 'list'
 				},
 			    success: function (res) {
-			    	vm.list = res.data.detail;
-			    	vm.listCont = res.data.detail.cont;
+			    	console.log(res.data);
+			    	console.log(res.data.items);
+			    	vm.list = res.data.items;
 			    }
 			})
 		}
