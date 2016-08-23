@@ -6,73 +6,120 @@ SPA.defineView('cart', {
   	html: cartTpl,
 bindEvents: {
 	'show': function () {
-		var n=0;
-		var by = 240;
-		var num=$("#wkf_add span:nth-child(2)").html();
-		var prie=$("#wkf_right p:last-child i:last-child").html();
-		var tol=$("#zj").html();
-		var tol2=$("#zj2").html();
-		var cj=$("#cj").html();
-		var chajia=parseFloat(cj-tol);
-		$("#cj").html(chajia)
-		console.log(cj)
-		console.log(tol)
-			if(cj<=tol){
-				
-				$("#yf").hide();
-				$("#myf").show();
+		
+		var $tol1=$(".zj");
+		var $tol2=$(".zj2");
+		var $cj=$(".cj");
+		var bymony=299;
+		var yfmony=10;
+		var myfj;
+		var chajia;
+		//计算总价
+		function jisuantol(){
+			var $prie=$(".wkf_right p:last-child i:last-child");
+			var $num=$(".wkf_add span:nth-child(2)");
+			var allmony=0;
+			$prie.each(function(i){
+				var price=parseFloat($(this).html());
+				var num=parseFloat($num.eq(i).html());
+				if($(this).parents().find(".wkf_swp_left").find(".wkfdx")[0].judge){
+					allmony+=price*num;
+				}	
+			});
+			allmony=allmony.toFixed(1);
+			myfj=(allmony-yfmony).toFixed(1);
+			chajia=(bymony-allmony).toFixed(1);
+			$tol1.html(allmony);
+			if(allmony<bymony){
+				$cj.html(chajia);
+				$tol2.html(allmony);
+				$(".yf").show();
+				$(".myf").hide();
 			}else{
-				$("#yf").show();
-				$("#myf").hide();
+				$tol2.html(myfj);
+				$(".yf").hide();
+				$(".myf").show();
+				$(".myfl").html("0.0");
 			}
-		$("#wkf_add span:first-child").on("tap",function(){
-			num--;
-			if(num<1){
-				num=1;
-				return;
-			}
-			$("#wkf_add span:nth-child(2)").html(num);
-			tol = num * prie;
-			$("#zj").html(tol);
-			chajia = tol - by;
-			if(chajia<=0){
-				$("#cj").html(Math.abs(chajia));
-				$("#myfl").html("10.0");
-				$("#yf").show();
-				$("#myf").hide();
+		}
+		//是不是全选
+		function isAllselect(){
+			var onoff=true;
+			$(".wkfdx").each(function(){
+				if(!this.judge)onoff=false;	
+			});
+			if(!onoff){
+				$(".wkfi").addClass("wkfbg-no");
+				$(".wkfi")[0].judge=false;
 			}else{
-				$("#myfl").html(0);
-				$("#yf").hide();
-				$("#myf").show();
+				$(".wkfi").removeClass("wkfbg-no");
+				$(".wkfi")[0].judge=true;
 			}
-			tol2=tol;
-			if(tol2>=299){
-				tol2=tol2-10
-			}	
-			$("#zj2").html(tol2);
-		})
-		$("#wkf_add span:last-child").on("tap",function(){
-			
-			num++;
-			$("#wkf_add span:nth-child(2)").html(num);
-			tol = num*prie;
-			$("#zj").html(tol);
-			chajia = cj - tol;
-			$("#cj").html(chajia);
-			if(chajia<=0){
-				$("#yf").hide();
-				$("#myf").show();
-				$("#myfl").html(0);
+		}
+		//减事件
+		$(".wkf_add span:first-child").on("tap",function(){
+			if(!$(this).parent().parent().find(".wkfdx")[0].judge)return;
+			var $goolnum=$(this).parent().find("span").eq(1);
+			var goolnum=parseInt($goolnum.html());
+			if(goolnum>1){
+				goolnum--;
+				$goolnum.html(goolnum);
+				jisuantol();
+			}else{
+				return alert("最少购买1件");
 			}
-			tol2=tol;
-			if(tol2>=299){
-				tol2=tol2-10
-			}	
-			$("#zj2").html(tol2);
+		});
+		//加事件
+		$(".wkf_add span:last-child").on("tap",function(){
+			if(!$(this).parent().parent().find(".wkfdx")[0].judge)return;
+			var $goolnum=$(this).parent().find("span").eq(1);
+			var goolnum=parseInt($goolnum.html());
+			if(goolnum<=98){
+				goolnum++;
+				$goolnum.html(goolnum);
+				jisuantol();
+			}else{
+				return alert("最多购买99件");
+			}
+		});
+		//按钮点击事件
+		$(".wkfdx").each(function(i){
+			this.judge=true;
+			$(this).on("tap",function(){
+				this.judge=!this.judge;
+				if(this.judge){
+					$(this).removeClass("wkfbg-no")
+					isAllselect();
+				}else{
+					$(this).addClass("wkfbg-no");
+					isAllselect();
+				}
+				jisuantol();
+			})
 		})
-				
+		//全选按钮点击
+		$(".wkfi").each(function(){
+			this.judge=true;
+			$(".wkfi").on("tap",function(){
+				this.judge=!this.judge;
+				if(this.judge){
+					$(".wkfi,.wkfdx").removeClass("wkfbg-no");
+					$(".wkfdx").each(function(){
+						this.judge=true;
+					})
+					
+				}else{
+					$(".wkfi,.wkfdx").addClass("wkfbg-no");
+					$(".wkfdx").each(function(){
+						this.judge=false;
+					})
+				}
+				jisuantol();
+			})
+		});
+		jisuantol();
+		//禁止滚动条反弹
+//		this.widgets.myScroll.options.bounce=false;
 	}
 }
- 
- 
 });

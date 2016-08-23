@@ -6,19 +6,22 @@
         width: 100%;
         font-family: "微软雅黑";
         header{
-            @include flexbox();
+            text-align: center;
             height: .44rem;
             background: $base-color;
             color: #fff;
-            padding-left: .54rem;
+            padding-left: .60rem;
             i{
-                width: .54rem;
-                text-align: center;
+                width: .60rem;
+                float: right;
                 line-height: .44rem;
                 font-size: .12rem;
+                display: inline-block;
             }
             span{
-                @include flex();
+//              @include flex();
+//              width: 82%;
+                display: inline-block;
                 text-align: center;
                 line-height: .44rem;
                 font-size: .15rem;
@@ -26,6 +29,7 @@
         }
          //============================= == section===================================
         section{
+            overflow: hidden!important;
             @include flex();
             @include flex-direction(column);
             width: 100%;
@@ -43,12 +47,12 @@
 //                  @include flexbox();
                     width: 100%;
                     float: left;
-                    #wkf_swp_left{
+                    .wkf_swp_left{
                         position: relative;
                         @include align-items(center);
                         @include flexbox();
                         width: 100%;
-                        #wkf_left{
+                        .wkf_left{
                             text-align: center;
                             width: .36rem;
                             i{
@@ -58,7 +62,7 @@
                                 @include border(2px,#d6d6d6,solid,50%);
                             }
                         }
-                        #wkf_center{
+                        .wkf_center{
                             height: .79rem;
                              width: .79rem;
                              @include border(1px,#ccc,solid,.1rem);
@@ -70,7 +74,7 @@
                             }
                         }
                        
-                        #wkf_right{
+                        .wkf_right{
                             @include flex();
                             padding-left: .1rem;
                             padding-right: .1rem;
@@ -84,7 +88,7 @@
                               
                             }
                         }
-                     #wkf_add{
+                     .wkf_add{
                          @include flexbox();
                          position: absolute;
                          right: .05rem;
@@ -167,4 +171,18 @@
          height: .15rem;
          @include border(2px,#fff,solid,50%);
     }
-  
+  .wkfbg{
+      background: url(../../../../img/cart/cb_check_check_all.png) no-repeat center;
+      background-size: cover;
+      
+  }
+  .wkfdx{
+      background: url(../../../../img/cart/cb_checked.png) no-repeat center;
+      background-size: cover;
+      
+  }
+  .wkfbg-no{
+      background: url(../../../../img/cart/cb_normal.png) no-repeat center;
+      background-size: cover;
+      
+  }

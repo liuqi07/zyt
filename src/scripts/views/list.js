@@ -4,5 +4,6 @@ var listTpl = require('../tpls/list.string');
 SPA.defineView('list', {
   	// 装载模板
   	html: listTpl
+  	
   
 });
