@@ -5,7 +5,7 @@
       <i class="yo-ico icon-lingdang"></i>
     </header>
     <section class="f-section">
-      <div class="f-sec-div">
+      <div class="f-sec-div" action-type='goto.login'>
         <i class="yo-ico icon-gerenxinxi-copy"></i>
       </div>
     </section>

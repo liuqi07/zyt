@@ -1,6 +1,6 @@
 <div class="regbox">
       <header class="reg_h">
-          <i class="yo-ico icon-fanhui"></i>
+          <i class="yo-ico icon-fanhui" action-type='back'></i>
           <span>注册</span>
       </header>
 

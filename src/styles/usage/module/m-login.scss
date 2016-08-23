@@ -83,4 +83,18 @@
         border:0;
       }
     }
+    .log_rig{
+        width:100%;height:.44rem;
+        padding:.1rem .2rem;
+        color:#B5B5B5;
+        span{
+            &:first-child{
+                float:left;
+            }
+            &:last-child{
+                float:right;
+            }
+        }
+    }
+
 }

@@ -1,7 +1,7 @@
 
 <div class="logbox">
       <header class="log_h">
-          <i class="yo-ico icon-fanhui"></i>
+          <i class="yo-ico icon-fanhui" action-type='back'></i>
           <span>登录</span>
       </header>
 
@@ -21,5 +21,9 @@
       <section class="log_btm">
         <button type="button" name="button">登录</button>
       </section>
+      <footer class="log_rig">
+          <span action-type='goto.register'>新用户注册</span>
+          <span>忘记密码？</span>
+      </footer>
 
 </div>
