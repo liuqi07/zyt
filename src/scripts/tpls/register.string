@@ -9,41 +9,29 @@
               <i class="yo-ico">ss</i>
               <input type="text" placeholder="请输入手机号"></input>
           </div>
-
-          <div class="">
-              <i class="">aa</i>
-              <span>请输入验证码</span>
-              <span>获取验证码</span>
-          </div>
-          <div class="">
-              <i class="">xx</i>
-              <span>请输入密码</span>
-          </div>
-          <div class="">
-              <i class="">cc</i>
-              <span>请重新输入密码</span>
-          </div>
-
-          <div class="reg_s1">
+          <div class="reg_s2">
               <i class="yo-ico">ss</i>
               <input type="text" placeholder="请输入验证码"></input>
-              <span class="reg_yan">获取验证码</span>
+              <button class="reg_yan">获取验证码</button>
           </div>
-          <div class="reg_s1">
+          <div class="reg_s3">
               <i class="yo-ico">ss</i>
               <input type="text" placeholder="请输入密码"></input>
+              <i class="ri yo-ico">ss</i>
           </div>
-          <div class="reg_s1">
+          <div class="reg_s4">
               <i class="yo-ico">ss</i>
               <input type="text" placeholder="请重新输入密码"></input>
+              <i class="ri yo-ico">ss</i>
           </div>
 
       </section>
-      <section>
+      <section class="gree">
         <i class="yo-ico">vv</i>
         我同意<span>正源通用户注册协议</span>
       </section>
-      <section>
+      <section class="reg_btm">
         <button type="button" name="button">提交</button>
       </section>
+
 </div>
