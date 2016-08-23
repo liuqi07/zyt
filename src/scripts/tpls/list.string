@@ -2,7 +2,7 @@
 	<header>
 		<div class="search">
 			<i class="yo-ico icon-search"></i>
-			<input type="text" name="" placeholder="请输入商品名称"/>
+			<input type="text" action-type="goto.search" placeholder="请输入商品名称"/>
 		</div>
 	</header>
 	<section spa-widget='scroll'>

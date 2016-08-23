@@ -3,7 +3,7 @@
 		<p>正源通</p>
 		<div class="search">
 			<i class="yo-ico icon-search"></i>
-			<input type="text" name="" placeholder="请输入商品名称"/>
+			<input type="text"  action-type="goto.search" placeholder="请输入商品名称"/>
 		</div>
 	</header>
 	<section spa-widget='scroll'>
@@ -14,12 +14,12 @@
           	</div>
 			<div class="swiper-container banner" id='home-swiper'>
 				<div class="swiper-wrapper">
-					<!--<div class="swiper-slide" ms-repeat-el="banner">
-						<img src="el.images" alt="" />
-					</div>-->
+					<div class="swiper-slide" ms-repeat-el="banner">
+						<img ms-src="el.images"/>
+					</div>
+					<!-- <div class="swiper-slide"><img src="/zyt/img/home/banner1.jpg" alt="" /></div>
 					<div class="swiper-slide"><img src="/zyt/img/home/banner1.jpg" alt="" /></div>
-					<div class="swiper-slide"><img src="/zyt/img/home/banner1.jpg" alt="" /></div>
-					<div class="swiper-slide"><img src="/zyt/img/home/banner1.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="/zyt/img/home/banner1.jpg" alt="" /></div> -->
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
@@ -31,7 +31,7 @@
 			<!-- ================================= -->
 			<div class="title1">
 				<div class="line"></div>
-				<p><i class="yo-ico icon-appreciate"></i>&nbsp;今日必买</p>	
+				<p><i class="yo-ico icon-appreciate"></i>&nbsp;今日必买</p>
 			</div>
 			<!-- ================================= -->
 			<ul class="list2">
@@ -46,7 +46,7 @@
 			</ul>
 			<div class="title1">
 				<div class="line"></div>
-				<p><i class="yo-ico .icon-hot"></i>&nbsp;热门商品</p>	
+				<p><i class="yo-ico .icon-hot"></i>&nbsp;热门商品</p>
 			</div>
 			<!-- ================================= -->
 			<ul class="list2">

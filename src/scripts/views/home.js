@@ -4,7 +4,7 @@ var homeTpl= require('../tpls/home.string');
 SPA.defineView('home', {
   	// 装载模板
   	html: homeTpl,
-  	
+
   	plugins: [{
   		name: 'avalon',
   		options: function(vm){
@@ -14,7 +14,7 @@ SPA.defineView('home', {
   			vm.onSale = [];
   		}
   	}],
-  	
+
   	//绑定视图事件
   	bindEvents: {
   		"show": function(){
@@ -22,6 +22,11 @@ SPA.defineView('home', {
   			var vm = this.getVM();
   			//ajax拉取数据
   			//轮播图
+            var mySwiper = new Swiper('#home-swiper',{
+  				loop:true,
+  				pagination : '.swiper-pagination',
+				paginationClickable :true
+  			});
   			$.ajax({
   				url: '/api/banner.php',
   				type: 'get',
@@ -30,11 +35,7 @@ SPA.defineView('home', {
   					vm.banner = res.data.items;
   				}
   			});
-  			var mySwiper = new Swiper('#home-swiper',{
-  				loop:true,
-  				pagination : '.swiper-pagination',
-				paginationClickable :true
-  			});
+
   			//list1  list2  list3
   			$.ajax({
   				url: '/api/home.php',
@@ -47,10 +48,10 @@ SPA.defineView('home', {
   					vm.hotProd = res.data.hotProd.items;
   				}
   			});
-  			
-  			
+
+
   		}
   	},
-  	
-  
+
+
 });

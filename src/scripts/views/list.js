@@ -4,20 +4,31 @@ var listTpl = require('../tpls/list.string');
 SPA.defineView('list', {
   	// 装载模板
   	html: listTpl,
-  	
-  	plugins: [{
+
+  	/*plugins: [{
+	    name: 'avalon',
+	    options: function (vm) {
+	    	vm.list = [];
+	    }
+	},'delegated'],
+
+    bindActions: {
+        'goto.search': function () {
+            SPA.open("search");
+        }
+    }*/
+    plugins: [{
 	    name: 'avalon',
 	    options: function (vm) {
 	    	vm.list = [];
 	    }
 	}],
-  
     // 绑定视图事件
 	bindEvents: {
 		'show': function () {
 	  		// 获得vm
 			var vm = this.getVM();
-		
+
 			// ajax拉取数据
 			$.ajax({
 			    url: '/api/list.php',

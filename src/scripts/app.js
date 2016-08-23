@@ -10,3 +10,4 @@ require('./views/good.js');
 require('./views/login.js');
 require('./views/mine.js');
 require('./views/register.js');
+require('./views/search.js');
