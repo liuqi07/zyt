@@ -1,0 +1,19 @@
+{
+	"code": "1000",
+	"message": "请求成功",
+	"data": {
+		"itemCount": 2,
+		"items": [{
+			"id": "aa9c9916b1014fb58075e105f8b70a44",
+			"url": "",
+			"images": "http://www.zhengyt.com/userfiles/1/images/advertise/2016/01/1.png",
+			"sort": "1"
+		}, {
+			"id": "0b74b054559440bf9d011c6c913935a6",
+			"url": "",
+			"images": "http://www.zhengyt.com/userfiles/1/images/advertise/2016/04/banner.jpg",
+			"sort": "2"
+		}],
+		"dicts": []
+	}
+}

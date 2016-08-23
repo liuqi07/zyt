@@ -1,4 +1,7 @@
 .f-container{
+  i{
+    font-size:.24rem;
+  }
   font-family: "微软雅黑";
   @include flexbox();
   @include flex-direction(column);
@@ -12,9 +15,10 @@
       @include flexbox();
       i{
         width: .44rem;
+        color:#ffffff;
         text-align: center;
         line-height: .44rem;
-        font-size: .3rem;
+        // font-size: .3rem;
       }
       b{
         font-weight: normal;
@@ -22,10 +26,11 @@
         text-align: center;
         line-height: .44rem;
         color:#ffffff;
-        font-size: .14rem;
+        font-size: .18rem;
       }
     }
     .f-section{
+      transform:translateY(-1px);
       background: #ffffff;
       @include flexbox();
       @include justify-content(center);
