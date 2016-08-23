@@ -1,0 +1,18 @@
+<div id="list-container">
+	<header>
+		<div class="search">
+			<i class="yo-ico icon-search"></i>
+			<input type="text" name="" placeholder="请输入商品名称"/>
+		</div>
+	</header>
+	<section spa-widget='scroll'>
+		<div class="scroll">
+			<div class="list" ms-repeat-el="list">
+				<p><i></i><strong ms-text="el.title"></strong></p>
+				<ul >
+					<li ms-repeat-cont="el.cont">{{cont}}</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>

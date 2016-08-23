@@ -20,6 +20,11 @@ $base-color: #04A247;
     src: url("/zyt/fonts/iconfont-cart.woff") format("woff"), 
         url("/zyt/fonts/iconfont-cart.ttf") format("truetype");
 }
+@font-face {
+    font-family: yofont;
+    src: url("/zyt/fonts/iconfont-mine2.woff") format("woff"), 
+        url("/zyt/fonts/iconfont-mine2.ttf") format("truetype");
+}
 
 .icon-shoplight:before { content: "\e7b8"; }
 .icon-sortlight:before { content: "\e7ad"; }
@@ -42,3 +47,11 @@ $base-color: #04A247;
 .icon-xiugaimima:before { content: "\e6a9"; }
 
 .icon-rmb:before { content: "\e656"; }
+
+.icon-fanhui:before { content: "\f000c"; }
+.icon-jiantouyou:before { content: "\e662"; }
+.icon-crmtubiao32:before { content: "\e7c7"; }
+.icon-xinxi:before { content: "\e659"; }
+.icon-jiemao:before { content: "\e610"; }
+.icon-dui:before { content: "\e76e"; }
+.icon-fenxiang1:before { content: "\e654"; }

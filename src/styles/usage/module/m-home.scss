@@ -35,6 +35,25 @@
         @include flex();
         overflow: hidden;
         .scroll{
+            .head {
+                text-align: center;
+                height: .35rem;
+                line-height: .35rem;
+                display: none;
+            }
+            .head img {
+                width: .16rem;
+                height: .16rem;
+                display: inline-block;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                transition: transform 150ms;
+                -webkit-transition: transform 150ms;
+            }
+            .up {
+                transform: rotate(360deg) !important;
+                -webkit-transform: rotate(360deg) !important;
+            }
             .banner{
                 width:100%;height:1.3rem;
                 background:red;
