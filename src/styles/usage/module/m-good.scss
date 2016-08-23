@@ -4,7 +4,10 @@
   @include flexbox();
   @include flex-direction(column);
   .good-t{
-      font-size:.15rem;
+    i{
+      font-size:.25rem;
+    }
+      font-size:.16rem;
       padding:.12rem;
       height:.44rem;
       background: $base-color;

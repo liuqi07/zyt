@@ -1,8 +1,8 @@
 <div class="goods-list">
   <header class="good-t">
-    <i class="yo-ico">ee</i>
+    <i class="yo-ico icon-fanhui"></i>
     <span>商品详情</span>
-    <i class="">dd</i>
+    <i class="yo-ico icon-fenxiang1"></i>
   </header>
 <div spa-widget="scroll" style="height:100%;">
 

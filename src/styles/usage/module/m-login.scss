@@ -6,7 +6,11 @@
     @include flex-direction(column);
 
     .log_h{
-        font-size:.18rem;
+      i{
+        font-size:.3rem;
+      }
+
+        font-size:.2rem;
         padding-left:.12rem;
         height:.44rem;
         width :100%;
@@ -26,6 +30,7 @@
       i{
         display:block;
         text-indent:.08rem;
+        font-size:.2rem;
       }
       padding:.12rem;
       // @include justify-content(center);
@@ -52,6 +57,9 @@
       .log_s2,.log_s3{
         font-size:.16rem;
         padding-right:.3rem;
+      }
+      .log_s2 .bm{
+        font-size:.3rem;
       }
       .log_s2 input{
         width:90%;
