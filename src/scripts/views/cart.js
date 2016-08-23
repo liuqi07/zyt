@@ -98,7 +98,70 @@ bindEvents: {
 			})
 		})
 		//全选按钮点击
-		$(".wkfi").each(function(){
+//		$(".wkfi").each(function(){
+//			this.judge=true;
+//			$(".wkfi").on("tap",function(){
+//				this.judge=!this.judge;
+//				if(this.judge){
+//					$(".wkfi,.wkfdx").removeClass("wkfbg-no");
+//					$(".wkfdx").each(function(){
+//						this.judge=true;
+//					})
+//					
+//				}else{
+//					$(".wkfi,.wkfdx").addClass("wkfbg-no");
+//					$(".wkfdx").each(function(){
+//						this.judge=false;
+//					})
+//				}
+//				jisuantol();
+//			})
+//		});
+		quanxuan();
+		jisuantol();
+		//禁止滚动条反弹
+//		this.widgets.myScroll.options.bounce=false;
+ // 获得vm
+//    var vm = this.getVM();
+//
+//    // ajax拉取数据
+//    $.ajax({
+//      url: '/api/livelist.php',
+//      type: 'get',
+//      data: {
+//        type: 'more',
+//        pageNo: 1
+//      },
+//      success: function (res) {
+//        vm.livelist = res.data;
+//      }
+//    });
+
+
+
+
+//=============================================================================================
+		var $editor=$("#editor");
+		var $wanc=$("#wanc");
+		var $schu=$("#schu");
+		var $jies=$("#jies")
+		$editor.on("tap",function(){
+//			console.log(1)
+			$(this).addClass("hid").siblings().removeClass("hid");
+			$schu.removeClass("hid").siblings().addClass("hid")
+		})
+		$wanc.on("tap",function(){
+//			console.log(1)
+			$(this).addClass("hid").siblings().removeClass("hid");
+			$schu.addClass("hid").siblings().removeClass("hid")
+		})
+		$schu.on("tap",function(){
+//			quanxuan();
+//			console.log(1)
+		})
+		
+		//全选函数
+		function quanxuan(){
 			this.judge=true;
 			$(".wkfi").on("tap",function(){
 				this.judge=!this.judge;
@@ -116,10 +179,11 @@ bindEvents: {
 				}
 				jisuantol();
 			})
-		});
-		jisuantol();
-		//禁止滚动条反弹
-//		this.widgets.myScroll.options.bounce=false;
+		};
+		
+		
+		
+		
 	}
 }
 });
