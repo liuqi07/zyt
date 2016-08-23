@@ -6,6 +6,12 @@ module.exports = {
     },{
       pattern: /\/api\/list\.php/,
       respondwith: './list.json'
+    },{
+      pattern: /\/api\/banner\.php/,
+      respondwith: './banner.json'
+    },{
+      pattern: /\/api\/home\.php/,
+      respondwith: './home.json'
     }
   ]
 };

@@ -8,55 +8,54 @@
 	</header>
 	<section spa-widget='scroll'>
 		<div class="scroll">
+			<div class="head">
+	            <img src="/zyt/img/home/arrow.png"/>
+	            <span>下拉刷新...</span>
+          	</div>
 			<div class="swiper-container banner" id='home-swiper'>
 				<div class="swiper-wrapper">
+					<!--<div class="swiper-slide" ms-repeat-el="banner">
+						<img src="el.images" alt="" />
+					</div>-->
 					<div class="swiper-slide"><img src="/zyt/img/home/banner1.jpg" alt="" /></div>
 					<div class="swiper-slide"><img src="/zyt/img/home/banner1.jpg" alt="" /></div>
 					<div class="swiper-slide"><img src="/zyt/img/home/banner1.jpg" alt="" /></div>
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
-			<ul class="list1" ms-repeat-el="livelist">
-				<li><img src="/zyt/img/home/home01.jpg" alt="" /><p>全部</p></li>
-				<li><img src="/zyt/img/home/home01.jpg" alt="" /><p>全部</p></li>
-				<li><img src="/zyt/img/home/home01.jpg" alt="" /><p>全部</p></li>
-				<li><img src="/zyt/img/home/home01.jpg" alt="" /><p>全部</p></li>
+			<ul class="list1">
+				<li ms-repeat-el="category">
+					<img ms-src="el.icon" alt="" /><p ms-text="el.name"></p>
+				</li>
 			</ul>
+			<!-- ================================= -->
 			<div class="title1">
 				<div class="line"></div>
 				<p><i class="yo-ico icon-appreciate"></i>&nbsp;今日必买</p>	
 			</div>
+			<!-- ================================= -->
 			<ul class="list2">
-				<li>
-					<div><img src="/zyt/img/home/list2-01.jpg" alt="" /></div>
-					<h3>澳大利亚·Banana Boat</h3>
-					<p>澳大利亚进口Banana Boat Everyday 香蕉船 SPF50+清洁儿童牙膏</p>
-					<span>¥<strong class="price">129.0</strong>元</span>
-					<span>¥<strong>159.0</strong>元</span>
+				<li ms-repeat-el="onSale">
+					<div><img ms-src="el.prodImages" alt="" /></div>
+					<h3 ms-text="el.name"></h3>
+					<p ms-text="el.shortDescription"></p>
+					<span>¥<strong class="price" ms-text="el.specialPrice"></strong>元</span>
+					<span>¥<strong ms-text="el.marketPrice"></strong>元</span>
 					<i class="yo-ico icon-cart"></i>
 				</li>
-				<li>
-					<div><img src="/zyt/img/home/list2-01.jpg" alt="" /></div>
-					<h3>澳大利亚·Banana Boat</h3>
-					<p>澳大利亚进口Banana Boat Everyday 香蕉船 SPF50+清洁儿童牙膏</p>
-					<span>¥<strong class="price">129.0</strong>元</span>
-					<span>¥<strong>159.0</strong>元</span>
-					<i class="yo-ico icon-cart"></i>
-				</li>
-				<li>
-					<div><img src="/zyt/img/home/list2-01.jpg" alt="" /></div>
-					<h3>澳大利亚·Banana Boat</h3>
-					<p>澳大利亚进口Banana Boat Everyday 香蕉船 SPF50+清洁儿童牙膏</p>
-					<span>¥<strong class="price">129.0</strong>元</span>
-					<span>¥<strong>159.0</strong>元</span>
-					<i class="yo-ico icon-cart"></i>
-				</li>
-				<li>
-					<div><img src="/zyt/img/home/list2-01.jpg" alt="" /></div>
-					<h3>澳大利亚·Banana Boat</h3>
-					<p>澳大利亚进口Banana Boat Everyday 香蕉船 SPF50+清洁儿童牙膏</p>
-					<span>¥<strong class="price">129.0</strong>元</span>
-					<span>¥<strong>159.0</strong>元</span>
+			</ul>
+			<div class="title1">
+				<div class="line"></div>
+				<p><i class="yo-ico .icon-hot"></i>&nbsp;热门商品</p>	
+			</div>
+			<!-- ================================= -->
+			<ul class="list2">
+				<li ms-repeat-el="hotProd">
+					<div><img ms-src="el.prodImages" alt="" /></div>
+					<h3 ms-text="el.name"></h3>
+					<p ms-text="el.shortDescription"></p>
+					<span>¥<strong class="price" ms-text="el.specialPrice"></strong>元</span>
+					<span>¥<strong ms-text="el.marketPrice"></strong>元</span>
 					<i class="yo-ico icon-cart"></i>
 				</li>
 			</ul>
