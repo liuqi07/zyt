@@ -4,10 +4,29 @@ var cartTpl = require('../tpls/cart.string');
 SPA.defineView('cart', {
   	// 装载模板
   	html: cartTpl,
+  	plugins: [{
+    name: 'avalon',
+    options: function (vm) {
+      vm.cart = [];
+    }
+  }],
 bindEvents: {
 	'show': function () {
-		
-		var $tol1=$(".zj");
+		 // 获得vm
+	    var vm = this.getVM();
+	//
+	      // ajax拉取数据
+	      $.ajax({
+	        url: '/api/cart.php',
+	        type: 'get',
+	        success: function (res) {
+	        vm.cart = res.data.items;
+	        caoz();
+				console.log(res.data.items)
+	        }
+	      });
+	function caoz(){
+	      			var $tol1=$(".zj");
 		var $tol2=$(".zj2");
 		var $cj=$(".cj");
 		var bymony=299;
@@ -121,21 +140,7 @@ bindEvents: {
 		jisuantol();
 		//禁止滚动条反弹
 //		this.widgets.myScroll.options.bounce=false;
- // 获得vm
-//    var vm = this.getVM();
-//
-//    // ajax拉取数据
-//    $.ajax({
-//      url: '/api/livelist.php',
-//      type: 'get',
-//      data: {
-//        type: 'more',
-//        pageNo: 1
-//      },
-//      success: function (res) {
-//        vm.livelist = res.data;
-//      }
-//    });
+
 
 
 
@@ -181,6 +186,8 @@ bindEvents: {
 			})
 		};
 		
+	      }
+
 		
 		
 		
