@@ -8,9 +8,11 @@
 	<section spa-widget='scroll'>
 		<div class="scroll">
 			<div class="list" ms-repeat-el="list">
-				<p><i></i><strong ms-text="el.title"></strong></p>
-				<ul >
-					<li ms-repeat-cont="el.cont">{{cont}}</li>
+				<p><i></i><strong ms-text="el.name"></strong></p>
+				<ul>
+					<!-- 循环list里的所有一级子元素中的childs，取到其中的name -->
+					<!-- 固定格式 ms-repeat-cont = 'el.attr'  {{cont.sub-attr}} -->
+					<li ms-repeat-cont="el.childs">{{cont.name}}</li>
 				</ul>
 			</div>
 		</div>
