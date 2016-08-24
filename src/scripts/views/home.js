@@ -13,8 +13,12 @@ SPA.defineView('home', {
   			vm.hotProd = [];
   			vm.onSale = [];
   		}
-  	}],
-
+  	},'delegated'],
+	bindActions: {
+        'goto.search': function () {
+            SPA.open('search');
+        }
+   },
   	//绑定视图事件
   	bindEvents: {
   		"show": function(){
@@ -22,17 +26,18 @@ SPA.defineView('home', {
   			var vm = this.getVM();
   			//ajax拉取数据
   			//轮播图
-            var mySwiper = new Swiper('#home-swiper',{
-  				loop:true,
-  				pagination : '.swiper-pagination',
-				paginationClickable :true
-  			});
+            
   			$.ajax({
   				url: '/api/banner.php',
   				type: 'get',
   				success: function(res){
   					console.log(res.data.items);
   					vm.banner = res.data.items;
+  					var mySwiper = new Swiper('#home-swiper',{
+	  				loop:true,
+	  				pagination : '.swiper-pagination',
+					paginationClickable :true
+	  			});
   				}
   			});
 

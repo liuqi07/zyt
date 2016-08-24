@@ -5,24 +5,17 @@ SPA.defineView('list', {
   	// 装载模板
   	html: listTpl,
 
-  	/*plugins: [{
-	    name: 'avalon',
-	    options: function (vm) {
-	    	vm.list = [];
-	    }
-	},'delegated'],
-
-    bindActions: {
-        'goto.search': function () {
-            SPA.open("search");
-        }
-    }*/
     plugins: [{
 	    name: 'avalon',
 	    options: function (vm) {
 	    	vm.list = [];
 	    }
-	}],
+	},'delegated'],
+	bindActions: {
+		'goto.search': function(){
+			SPA.open('search');
+		}
+	},
     // 绑定视图事件
 	bindEvents: {
 		'show': function () {

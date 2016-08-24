@@ -7,5 +7,18 @@
 		</div>
         <i class='yo-ico icon-cart sp' action-type="goto.cart"></i>
     </header>
-    <section></section>
+    <section spa-widget='scroll'>
+    	<div>
+    		<ul class="list">
+				<li ms-repeat-el="search">
+					<div><img ms-src="el.prodImages" alt="" /></div>
+					<h3 ms-text="el.name"></h3>
+					<p ms-text="el.shortDescription"></p>
+					<span>¥<strong class="price" ms-text="el.specialPrice"></strong>元</span>
+					<span>¥<strong ms-text="el.marketPrice"></strong>元</span>
+					<i class="yo-ico icon-cart"></i>
+				</li>
+			</ul>
+    	</div>
+    </section>
 </div>

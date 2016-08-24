@@ -15,6 +15,9 @@ module.exports = {
     },{
       pattern: /\/api\/cart\.php/,
       respondwith: './cart.json'
+    },{
+      pattern: /\/api\/allGoods\.php/,
+      respondwith: './allGoods.json'
     }
   ]
 };
