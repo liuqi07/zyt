@@ -22,7 +22,7 @@ bindEvents: {
 	        success: function (res) {
 	        vm.cart = res.data.items;
 	        caoz();
-				console.log(res.data.items)
+				
 	        }
 	      });
 	function caoz(){

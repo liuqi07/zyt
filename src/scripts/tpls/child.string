@@ -7,18 +7,12 @@
 	<body>
 		<div id="child-container">
 			<header>
-				
 					<i style="color: red;" class="yo-ico icon-fanhui"></i>
-				
-				<div>
-					<div></div>
-					<div></div>
-				</div>
-				
+				<ul id="serch_c">
+					<li></li>
+					<li></li>
+				</ul>
 					<i class="yo-ico icon-cart"></i>
-				
-				
-				
 			</header>
 			<section >
 				
