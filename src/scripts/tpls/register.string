@@ -7,31 +7,37 @@
       <section class="reg_s">
           <div class="reg_s1">
               <i class="yo-ico icon-gerenxinxi-copy"></i>
-              <input type="text" placeholder="请输入手机号"></input>
+              <input id="reg_tel" type="text" action-type="register_" placeholder="请输入手机号"></input>
           </div>
           <div class="reg_s2">
               <i class="yo-ico icon-xinxi"></i>
-              <input type="text" placeholder="请输入验证码"></input>
-              <div class="reg_yan">获取验证码</div>
+              <input id="reg_verify" type="text" placeholder="请输入验证码"></input>
+              <span class="yan">
+
+              </span>
+              <div action-type="yanzheng" id="get_ver" class="reg_yan">获取验证码</div>
           </div>
           <div class="reg_s3">
               <i class="yo-ico icon-xiugaimima"></i>
-              <input type="text" placeholder="请输入密码"></input>
+              <input id="reg_in" type="password" placeholder="请输入密码"></input>
               <i class="ri yo-ico icon-jiemao"></i>
           </div>
           <div class="reg_s4">
               <i class="yo-ico icon-xiugaimima"></i>
-              <input type="text" placeholder="请重新输入密码"></input>
+              <input action-type="reg_rep" id="reg_repeat" type="password" placeholder="请重新输入密码"></input>
               <i class="ri yo-ico icon-jiemao"></i>
           </div>
 
       </section>
       <section class="gree">
-        <i class="yo-ico icon-dui"></i>
+        <i action-type="degr" class="ko yo-ico icon-dui"></i>
         我同意<span>正源通用户注册协议</span>
       </section>
       <section class="reg_btm">
-        <button type="button" name="button">提交</button>
+        <button action-type="sub" class="btn_" type="button" name="button">提交</button>
       </section>
+      <footer class="fot">
+
+      </footer>
 
 </div>
