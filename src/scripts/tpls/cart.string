@@ -6,12 +6,16 @@
 				<i id="editor">编辑</i>
 				<i id="wanc" class="hid">完成</i>
 			</div>
-			
+
 		</header>
-		<section spa-widget="scroll" data-scroll-id="myScroll">	
+		<section spa-widget="scroll" data-scroll-id="myScroll">
 			<div id="sec" >
+				<div class="head">
+					<img src="/zyt/img/arrow.png"/>
+					<span>下拉刷新...</span>
+				</div>
 				<ul class="target" ms-repeat-el="cart">
- 				
+
 				<li >
 					<div class="wkf_swp_left" >
 						<div class="wkf_left"><i class="wkfbg wkfdx"></i></div>
@@ -25,7 +29,7 @@
 								<i ms-text="el.marketPrice">100</i>
 							</p>
 						</div>
-						<div class="wkf_add"> 
+						<div class="wkf_add">
 							<span>-</span>
 							<span>1</span>
 							<span>+</span>
@@ -35,12 +39,15 @@
 				<li>
 					<div class="wkf_swp_left"></div>
 				</li>
-				 
-				
+
+
 			</ul>
-			
+			<div class="foot">
+			   <img src="/zyt/img/arrow.png"/>
+			   <span>上拉加载更多...</span>
+			 </div>
 			</div>
-			
+
 		</section>
 		<div class="buy">
 		<ul>
@@ -71,26 +78,3 @@
 		</ul>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

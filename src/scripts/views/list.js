@@ -30,8 +30,8 @@ SPA.defineView('list', {
 			  		type: 'list'
 				},
 			    success: function (res) {
-			    	console.log(res.data);
-			    	console.log(res.data.items);
+			    	//console.log(res.data);
+			    	//console.log(res.data.items);
 			    	vm.list = res.data.items;
 			    }
 			})
