@@ -8,22 +8,25 @@
       <section class="log_s">
           <div class="log_s1">
               <i class="yo-ico icon-gerenxinxi-copy"></i>
-              <input type="text" placeholder="请输入手机号"></input>
+              <input id="tel" type="text" placeholder="请输入手机号"></input>
           </div>
           <div class="log_s2">
               <i class="yo-ico icon-xiugaimima"></i>
-              <input type="text" placeholder="请输入密码"></input>
+              <input id="pass" type="password" placeholder="请输入密码"></input>
               <i class="bm yo-ico icon-jiemao"></i>
           </div>
 
       </section>
 
       <section class="log_btm">
-        <button type="button" name="button">登录</button>
+        <button type="button" action-type="login_" name="button">登录</button>
       </section>
       <footer class="log_rig">
           <span action-type='goto.register'>新用户注册</span>
           <span>忘记密码？</span>
       </footer>
+      <div class="bm1">
+
+      </div>
 
 </div>
