@@ -10,7 +10,7 @@
     <section spa-widget='scroll'>
     	<div>
     		<ul class="list">
-				<li ms-repeat-el="search" action-type='goto.detail' ms-attr-data-id='el.id'>
+				<li ms-repeat-el="search" action-type='goto.good' ms-attr-data-id='el.id'>
 					<div><img ms-src="el.prodImages" alt="" /></div>
 					<h3 ms-text="el.name"></h3>
 					<p ms-text="el.shortDescription"></p>
