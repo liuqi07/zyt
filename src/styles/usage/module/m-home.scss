@@ -38,24 +38,27 @@
         @include flex();
         overflow: hidden;
         .scroll{
-            .head {
-                text-align: center;
+            .head,.foot{
                 height: .35rem;
-                line-height: .35rem;
+                text-align: center;
                 display: none;
+                img{
+                    width: .16rem;
+                }
             }
-            .head img {
-                width: .16rem;
-                height: .16rem;
-                display: inline-block;
+            .head{
+                img{
+                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                }
+            }
+            .up{
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+            }
+            .down{
                 transform: rotate(180deg);
                 -webkit-transform: rotate(180deg);
-                transition: transform 150ms;
-                -webkit-transition: transform 150ms;
-            }
-            .up {
-                transform: rotate(360deg) !important;
-                -webkit-transform: rotate(360deg) !important;
             }
             .banner{
                 width:100%;height:1.3rem;

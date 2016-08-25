@@ -11,4 +11,3 @@ require('./views/login.js');
 require('./views/mine.js');
 require('./views/register.js');
 require('./views/search.js');
-require('./views/child.js');

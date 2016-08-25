@@ -31,7 +31,7 @@ SPA.defineView('login', {
                       $(".bm1").html("密码输入有误！")
                   }else{
                     $(".bm1").html("登录成功！");
-                    SPA.open('home');
+                    //SPA.open('index');
                   }
               }
           })

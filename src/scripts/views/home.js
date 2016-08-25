@@ -46,8 +46,6 @@ SPA.defineView('home', {
   				url: '/api/home.php',
   				type: 'get',
   				success: function(res){
-  					//console.log(res);
-  					//console.log(res.data.onSale.items);
   					vm.category = res.data.category.items;
   					vm.onSale = res.data.onSale.items;
   					vm.hotProd = res.data.hotProd.items;

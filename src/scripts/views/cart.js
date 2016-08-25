@@ -222,13 +222,7 @@ bindEvents: {
                 jisuantol();
             })
         }
-
-
 }
-
-
-
-
 }
 }
 });

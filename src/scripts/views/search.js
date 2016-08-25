@@ -20,12 +20,10 @@ SPA.defineView('search', {
             this.hide();
         },
         'goto.good': function(el, data){
-            console.log(data.id);
+            //console.log(data.id);
             SPA.open('good', {
                 param: {
-                    id: data.id,
-                    name: data.name
-                    
+                    id: data.id
                 }
             })
         }
