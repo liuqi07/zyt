@@ -24,7 +24,7 @@ SPA.defineView('list', {
 
 			// ajax拉取数据
 			$.ajax({
-			    url: '/api/list.php',
+			    url: '/zyt/mock/list.json',
 				type: 'get',
 				data: {
 			  		type: 'list'

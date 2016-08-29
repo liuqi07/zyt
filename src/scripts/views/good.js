@@ -27,7 +27,7 @@ SPA.defineView('good', {
         });
         $.ajax({
         	type:"get",
-        	url:"/api/allGoods.php",
+        	url:"/zyt/mock/allGoods.json",
         	data: {
         		id: that.param.id
         	},

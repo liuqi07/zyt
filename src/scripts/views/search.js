@@ -33,11 +33,12 @@ SPA.defineView('search', {
     		var vm = this.getVM();
     		var $search = $("#search-container>header>.search>input");
 
-    		$search.on('blur',function(){
+    		$search.on('change',function(){
+    			console.log(2)
     			if($search.val()!=""){
 	    			var txt = $search.val();
 	    			$.ajax({
-	    				url: '/api/allGoods.php',
+	    				url: '/zyt/mock/allGoods.json',
 	    				type: 'get',
 	    				success: function(res){
 	    					//console.log(res.data.items);

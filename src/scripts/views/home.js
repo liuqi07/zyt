@@ -28,7 +28,7 @@ SPA.defineView('home', {
   			//轮播图
 
   			$.ajax({
-  				url: '/api/banner.php',
+  				url: '/zyt/mock/banner.json',
   				type: 'get',
   				success: function(res){
   					//console.log(res.data.items);
@@ -43,7 +43,7 @@ SPA.defineView('home', {
 
   			//list1  list2  list3
   			$.ajax({
-  				url: '/api/home.php',
+  				url: '/zyt/mock/home.json',
   				type: 'get',
   				success: function(res){
   					vm.category = res.data.category.items;
@@ -84,9 +84,11 @@ SPA.defineView('home', {
          				type: 'get',
          				success: function(res){
          					vm.onSale = res.data.onSale.items;
+         					myScroll.scrollTo(0, -topSize);
          				}
          			});
                 }
+				
 
                 var maxY = this.maxScrollY - this.y;
                 var self = this;

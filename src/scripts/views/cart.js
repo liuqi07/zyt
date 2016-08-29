@@ -16,7 +16,7 @@ bindEvents: {
 	    var vm = this.getVM();
 	      // ajax拉取数据
 	      $.ajax({
-	        url: '/api/cart.php',
+	        url: '/zyt/mock/cart.json',
 	        type: 'get',
 	        success: function (res) {
 	        vm.cart = res.data.items;
