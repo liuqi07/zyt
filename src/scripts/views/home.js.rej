@@ -1,0 +1,9 @@
+diff a/src/scripts/views/home.js b/src/scripts/views/home.js	(rejected hunks)
+@@ -43,7 +43,6 @@
+ 
+   			//list1  list2  list3
+   			$.ajax({
+-  				url: '/api/home.php',
+   				url: '/zyt/mock/home.json',
+   				type: 'get',
+   				success: function(res){
